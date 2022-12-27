@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HitSuGayA</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: white;
+            width: 600px;
+            height: 700px;
+            margin: 0 auto;
+            border: 2px solid black;
+        }
+        .header{
+            padding-top: 6px;
+            height: 60px;
+            border-bottom: 2px solid black;
+            font-size: 40px;
+            text-align: center;
+            font-weight: 600;
+        }
+        .item{
+            list-style: none;
+        }
+        .item:hover{
+            box-shadow: 0px 0px 10px 2px grey;
+            cursor: pointer;
+        }
+        #i10{
+            border-bottom: none;
+        }
+        li{
+            border-bottom: 2px solid black;
+            height: 63.8px;
+            padding-top: 15px;
+            padding-left: 10px;
+            font-size: 20px;
+        }
+        .pages{
+            text-align: center;
+            margin-top: 20px;
+        }
+        button{
+            padding: 5px 10px;
+        }
+        .information{
+            width: 100vw;
+            height: 100vh;
+            background-color: grey;
+            position: fixed;
+            opacity: .8;
+            text-align: center;
+            font-size: 80px;
+            color: black;
+            display: none;
+        }
+        .ok{
+            padding: 10px 30px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="information">
+        <div class="userId"></div>
+        <div class="id"></div>
+        <div class="title"></div>
+        <button class="ok">OK</button>
+    </div>
+    <div class="container">
+        <div class="header">
+            Header
+        </div>
+        <ul class="items">
+            <!-- <li class="item" id="i1">1123</li> -->
+        </ul>
+        <div class="pages">
+            <button class="btn" id="b1">1</button>
+            <button class="btn" id="b2">2</button>
+            <button class="btn" id="b3">3</button>
+            <button class="btn" id="b4">4</button>
+            <button class="btn" id="b5">5</button>
+            <button class="btn" id="b6">6</button>
+            <button class="btn" id="b7">7</button>
+            <button class="btn" id="b8">8</button>
+            <button class="btn" id="b9">9</button>
+            <button class="btn" id="b10">10</button>
+        </div>
+
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
